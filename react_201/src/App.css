@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/* nav */
+nav {
+    height:  180px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: rgb(241, 240, 237);
+    box-shadow: rgb(119, 119, 119) 2px 3px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo > img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: rgb(179, 168, 168) 2px 2px 1px;
+}
+
+.options, .option-menu, .option-apps {
+    list-style: none;
+}
+
+
+
+.font{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.font:hover {
+    width: 25px;
+    height: 25px;
+}
+
+nav ul{
+    float: right;
+
+}
+
+nav ul li {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    background-color: rgb(241, 240, 237);
+    box-shadow: rgb(119, 119, 119) 2px 3px 2px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+   color: rgb(119, 119, 119);
+}
+
+nav ul ul {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: none;
+    
+  
+}
+nav ul ul ul{
+    position: inherit;
+    right: 60px;
+    top: -10px;
+}
+
+nav ul li:hover >ul {
+    display: block;
+}
+
+/* main */
+.prop-image{
+    width: 400px;
+    height: 200px;
+}
+
+.prop-main{
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
